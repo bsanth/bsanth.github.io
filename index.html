@@ -6,7 +6,7 @@ title: Santhosh Kumar Bala Krishnan
 <html>
    <head>
       <meta name="author" content="Santhosh Kumar Bala Krishnan" />
-      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>{{ page.title }}</title>
    </head>
    <body>
@@ -18,7 +18,6 @@ title: Santhosh Kumar Bala Krishnan
       <ul class="posts">
          {% for post in site.posts %}
          <li>
-            <span>{{ post.date | date_to_string }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
          </li>
          {% endfor %}
