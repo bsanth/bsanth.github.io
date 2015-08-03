@@ -1,1 +1,28 @@
-Hello World
+---
+title: Santhosh Kumar Bala Krishnan
+---
+
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta name="author" content="Santhosh Kumar Bala Krishnan" />
+      
+      <title>{{ page.title }}</title>
+   </head>
+   <body>
+      
+      <header>
+         <h1><a href="/">{{ page.title }}</a></h1>
+      </header>
+      
+      <ul class="posts">
+         {% for post in site.posts %}
+         <li>
+            <span>{{ post.date | date_to_string }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+         </li>
+         {% endfor %}
+      </ul>
+      
+   </body>
+</html>
