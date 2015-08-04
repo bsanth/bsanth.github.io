@@ -7,21 +7,60 @@ title: Santhosh Kumar Bala Krishnan
    <head>
       <meta name="author" content="Santhosh Kumar Bala Krishnan" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>{{ page.title }}</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <!-- Page sytle -->
+      <link rel="stylesheet" type="text/css" href="css/index.css">
    </head>
    <body>
+
+     <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">{{ page.title }}</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <p class="lead">This line intentionally made vertically centered.</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
       
-      <header>
-         <h1><a href="/">{{ page.title }}</a></h1>
-      </header>
-      
-      <ul class="posts">
-         {% for post in site.posts %}
-         <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-         </li>
-         {% endfor %}
-      </ul>
-      
+      <!-- Scripts -->
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script>
+         if (typeof jQuery === 'undefined') {
+            document.write(unescape('%3Cscript%20src%3D%22/path/to/your/scripts/jquery-2.1.4.min.js%22%3E%3C/script%3E'));
+         }
+      </script>
    </body>
 </html>
